@@ -37,7 +37,10 @@ jobs:
           - target: aarch64-pc-windows-msvc
             os: windows-latest
             cross: false
-          # macOS
+          # macOS (arm64 runner cross-compiles x86_64)
+          - target: x86_64-apple-darwin
+            os: macos-latest
+            cross: false
           - target: aarch64-apple-darwin
             os: macos-latest
             cross: false

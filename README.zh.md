@@ -91,6 +91,7 @@ GitHub Actions 发布工作流会构建以下目标：
 - `aarch64-unknown-linux-musl`
 - `x86_64-pc-windows-msvc`
 - `aarch64-pc-windows-msvc`
+- `x86_64-apple-darwin`
 - `aarch64-apple-darwin`
 
 ## 许可证
