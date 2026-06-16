@@ -1,0 +1,29 @@
+[package]
+name = "mergehex-rs"
+version = "0.1.0"
+edition = "2024"
+authors = ["mergehex-rs contributors"]
+description = "A cross-platform merge tool for Intel HEX, binary, and ELF files"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/mergehex-rs/mergehex-rs"
+keywords = ["hex", "intel-hex", "merge", "elf", "firmware"]
+categories = ["command-line-utilities", "development-tools"]
+rust-version = "1.85"
+
+[[bin]]
+name = "mergehex-rs"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+thiserror = "2.0"
+anyhow = "1.0"
+object = { version = "0.36", default-features = false, features = ["read"] }
+
+[dev-dependencies]
+tempfile = "3.14"
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
