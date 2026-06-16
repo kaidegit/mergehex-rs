@@ -1,6 +1,6 @@
 [package]
 name = "mergehex-rs"
-version = "0.1.0"
+version = "0.0.1"
 edition = "2024"
 authors = ["mergehex-rs contributors"]
 description = "A cross-platform merge tool for Intel HEX, binary, and ELF files"
